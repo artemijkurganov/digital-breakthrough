@@ -1,7 +1,17 @@
-Node JS 18.12.0
+## Версии
 
-Python 3.10.1
+- Node JS 18.12.0
 
-`npm i`
+- Python 3.10.1
 
-`node server.js`
+## Запуск проекта
+
+```sh
+npm i
+python3 -m venv venv
+pip install -r requirements.txt
+
+node server.js
+```
+
+Сервер будет запущен на адресе `localhost:3000`
