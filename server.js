@@ -16,8 +16,10 @@ app.get("/send", (req, res) => {
         if (err)
             console.log(err);
     });
-    // exec('python ./main.py', runScript);
-    exec('python main.py', runScript);
+    const isWin = process.platform === "win32";
+    if (isWin)
+        exec('python main.py', runScript);
+    else exec('python3 main.py', runScript);
     res.sendStatus(200);
 })
 
