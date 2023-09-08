@@ -17,7 +17,7 @@ app.get("/send", (req, res) => {
             console.log(err);
     });
     // exec('python ./main.py', runScript);
-    exec('python ./main.py', runScript);
+    exec('python main.py', runScript);
     res.sendStatus(200);
 })
 
